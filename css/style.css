@@ -80,12 +80,17 @@ body{
     height: 99vh;
     margin-top: 10%;
 }
-.conjunto_automacao{
+.redes{
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 355px;
+}
+.conjunto_automacao, .conjunto_redes{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
     width: 30%;
+    margin-right: 75px;
 }
 .foto{
     width: 100vw;
@@ -119,6 +124,24 @@ img{
     margin-left: 60px;
     border-radius: 5px;
 }
+.tcp_ip, .estruturas_redes, .aula_redes, .mer1, .der{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+    height: 45vh;
+    margin: 30px;
+}
+.imagens_banco{
+    margin-top: 15vh;
+}
+.der{
+    margin-left: 15px;
+}
+.imagens_redes{
+    margin-top: 10vh;
+    margin-right: -95vw;
+}
 .title_inicio{
     display: flex; 
     justify-content: center;
@@ -129,13 +152,20 @@ img{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
 }
-.title_orientador, .title_recursos{
+.title_orientador, .title_recursos, .title_redes, .title_banco{
     font-size: xx-large;
     text-align: center;
     width: 50%;
     margin-top: 13vh;
     box-shadow: 6px 6px 15px rgb(60, 0, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title_redes, .title_banco{
+    margin-top: 20vh;
+    width: 90%;
+}
+.title_banco{
+    margin-top: -285px;
 }
 .title_recursos{
     margin-left: 25%;
@@ -155,7 +185,7 @@ img{
     margin-top: 10vh;
 }
 .title_automacao{
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 .title_curriculo, .title_js{
     display: flex; 
@@ -208,7 +238,7 @@ img{
     right: 3vw;
     width: 50vw;
 }
-.text_js{
+.text_js, .text_redes, .text_banco{
     display: flex;
     flex-direction: column;
     color:#ffffff;
@@ -217,6 +247,15 @@ img{
     font: bolder;
     font-size:medium;
     text-align: justify;
+}
+.text_redes{
+    width: 50vw;
+    gap: 30px;
+}
+.text_banco{
+    width: 50vw;
+    gap: 30px;
+    margin-left: 105vh;
 }
 .text_img{
    display: flex;
@@ -238,10 +277,11 @@ img{
 }
 .text_robotica{
     margin-right: -60%;
-    margin-left: 10%;
+    margin-left: 5%;
     width: 60vw;
+    gap: 35px;
 }
-.text_automcao{
+.text_automacao{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -293,6 +333,13 @@ img{
     align-items: center;
     gap: 50px;
 }
+.hardware{
+    width: 41vw;
+    height: 40vh;
+    margin-left: -85px;
+    margin-bottom: -20vh;
+    margin-top: 5vh;
+}
 .foto_industria, .ana_robo, .video_semaforo, .video_ultrassonico{
     display: flex;
     flex-direction: column;
@@ -306,6 +353,9 @@ img{
 }
 .foto_industria{
     margin-top: -40px;
+}
+.video_semaforo{
+    margin-top: 140px;
 }
 .container {
     position: relative;
