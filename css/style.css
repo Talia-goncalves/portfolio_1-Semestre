@@ -39,8 +39,10 @@ li,a{
     transition: all ease-in-out 0.5s;
 }
 li:hover{
-    font-size: 120%;
     cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 body{
     background-color: rgb(0, 0, 0);
@@ -83,7 +85,7 @@ body{
 .redes{
     height: 100vh;
     width: 100vw;
-    margin-bottom: 355px;
+    margin-bottom: 655px;
 }
 .conjunto_automacao, .conjunto_redes{
     display: flex;
@@ -91,6 +93,11 @@ body{
     justify-content: center;
     width: 30%;
     margin-right: 75px;
+}
+.conjunto_ciencias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .foto{
     width: 100vw;
@@ -124,20 +131,19 @@ img{
     margin-left: 60px;
     border-radius: 5px;
 }
-.tcp_ip, .estruturas_redes, .aula_redes, .mer1, .der{
+.tcp_ip, .estruturas_redes, .aula_redes, .seminario, .mer1, .der, .codigo, .diagrama, .foto_regressao, .plot_reta, .plot_curva, .gif_seno{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 40vw;
     height: 45vh;
     margin: 30px;
+    box-shadow: -1px 2px 7px rgb(60, 0, 255);
 }
-.imagens_banco{
+.imagens_banco, .imagens_ciencias{
     margin-top: 15vh;
 }
-.der{
-    margin-left: 15px;
-}
+
 .imagens_redes{
     margin-top: 10vh;
     margin-right: -95vw;
@@ -152,7 +158,7 @@ img{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
 }
-.title_orientador, .title_recursos, .title_redes, .title_banco{
+.title_orientador, .title_recursos, .title_redes, .title_banco, .title_ciencias{
     font-size: xx-large;
     text-align: center;
     width: 50%;
@@ -164,12 +170,17 @@ img{
     margin-top: 20vh;
     width: 90%;
 }
+.title_ciencias{
+    width: 95%;
+    margin-top: 5vh;
+}
 .title_banco{
-    margin-top: -285px;
+    margin-top: -195vh;
 }
 .title_recursos{
     margin-left: 25%;
 }
+
 .title_linguagem, .title_robotica, .title_automacao{
     display: flex; 
     justify-content: center;
@@ -201,7 +212,7 @@ img{
     font-size:large;
     margin-left: 3%;
 }
-.title_java{
+.title_java, .title_link{
     display: flex; 
     justify-content: center;
     gap: 30px;
@@ -212,6 +223,12 @@ img{
     font-size:x-large;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 6px 6px 15px rgb(60, 0, 255);
+}
+.title_link{
+    margin-top: 5vh;
+    width: 50%;
+    margin-left: 25%;
+    font-size: xx-large;
 }
 .text_inicio{
     display: flex; 
@@ -238,7 +255,7 @@ img{
     right: 3vw;
     width: 50vw;
 }
-.text_js, .text_redes, .text_banco{
+.text_js, .text_redes, .text_banco, .text_ciencias{
     display: flex;
     flex-direction: column;
     color:#ffffff;
@@ -252,10 +269,16 @@ img{
     width: 50vw;
     gap: 30px;
 }
-.text_banco{
+.text_ciencias{
     width: 50vw;
+    gap: 35px;
+    margin-top: 15vh;
+    margin-left: 2vw;
+}
+.text_banco{
+    width: 45vw;
     gap: 30px;
-    margin-left: 105vh;
+    margin-left: 110vh;
 }
 .text_img{
    display: flex;
@@ -276,8 +299,8 @@ img{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .text_robotica{
-    margin-right: -60%;
-    margin-left: 5%;
+    margin-right: -70%;
+    margin-left: 25%;
     width: 60vw;
     gap: 35px;
 }
@@ -333,20 +356,22 @@ img{
     align-items: center;
     gap: 50px;
 }
-.hardware{
+#hardware{
     width: 41vw;
     height: 40vh;
-    margin-left: -85px;
+    margin-left: -19vw;
     margin-bottom: -20vh;
     margin-top: 5vh;
+    box-shadow: 1px -2px 7px rgb(60, 0, 255);
 }
-.foto_industria, .ana_robo, .video_semaforo, .video_ultrassonico{
+.foto_industria, .ana_robo, .video_sequencia, .video_semaforo, .video_ultrassonico{
     display: flex;
     flex-direction: column;
-    width: 40.8vw;
+    width: 40vw;
     height: 50vh;
     margin-top: 100px;
     margin-left: -250px;
+    box-shadow: 1px -2px 7px rgb(60, 0, 255);
 }
 .video_ultrassonico{
     margin-top: -20px;
@@ -355,7 +380,7 @@ img{
     margin-top: -40px;
 }
 .video_semaforo{
-    margin-top: 140px;
+    margin-top: -25px;
 }
 .container {
     position: relative;
@@ -374,6 +399,7 @@ img{
     width: 520px;
     height: 300px;
     left: -285px;
+    box-shadow: 1px -2px 7px rgb(60, 0, 255);
 }
 .back-image {
     opacity: 0;

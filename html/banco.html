@@ -17,8 +17,8 @@
                 <li><a href="/html/linguagem.html">Java e POO</a></li>
                 <li><a href="/html/automacao.html">Robótica e<br> Automação</a></li>
                 <li><a href="/html/redes.html">Redes</a></li>
-                <li><a href="#banco">Banco de Dados</a></li>
-                <li><a href="/html/ciencia.html">Ciências de Dados</a></li>
+                <li><a href="/html/banco.html">Banco de <br>Dados</a></li>
+                <li><a href="/html/ciencia.html">Ciências de <br>Dados</a></li>
                 <li><a href="/html/ciencia.html">Links</a></li>
             </ul>
         </nav>
@@ -26,21 +26,28 @@
     <section class="banco">
         <div class="conjunto_banco">
             <div class="imagens_banco">
-                <div class="mer1">
-                    <div class="tcp">
-                        <img class="mer1" src="/img/bd/mer1.png" alt="">
-                    </div>
-                    <div class="der">
-                        <img class="der" src="/img/bd/DER.png" alt="">
-                    </div>
+                <div id="mer1">
+                    <img class="mer1" src="/img/bd/mer1.png" alt="">
+                </div>
+                <div id="der">
+                    <img class="der" src="/img/bd/DER.png" alt="">
+                </div>
+                <div id="codigo">
+                    <img class="codigo" src="/img/bd/codigo_banco.jpeg" alt="">
+                </div>
+                <div id="diagrama">
+                    <img class="diagrama" src="/img/bd/diagrama.jpeg" alt="">
                 </div>
             </div>
             <div class="text_banco">
                 <div class="title_banco"><strong>Banco de Dados</strong></div>
-                <p>Em um banco de dados, é essencial entender o conceito e a importância dele. Um banco de dados é uma coleção organizada de informações, ou dados, geralmente armazenados eletronicamente em um sistema de computador. Normalmente, o banco de dados é controlado por um sistema de gerenciamento de banco de dados (DBMS) e ele possui dois tipos: O banco de dados Relaciona e o Não-Relacional.</p>
-                <p>No contexto de banco de dados, há dois conceitos importantes: o Modelo Entidade e Relacionamento (MER) e o Diagrama de Entidade e Relacionamento (DER). O MER é utilizado para criar um modelo conceitual que representa a estrutura lógica dos dados em um sistema. Ele é composto por entidades e relacionamentos, e pode ser representado textualmente ou visualmente por meio de um diagrama de classe. Já o DER é uma representação visual do modelo entidade e relacionamento, que inclui atributos, relacionamentos e cardinalidades de cada elemento. Normalmente, o DER serve como base para projetar e implementar o modelo físico do banco de dados. O modelo físico é a implementação concreta do banco de dados em um Sistema de Gerenciamento de Banco de Dados (SGBD), como o PostgreSQL, por exemplo.</p>
-                <p>Após compreendermos esses conceitos, passamos a aprender sobre a linguagem utilizada em um banco de dados. Isso inclui os comandos de DDL (Linguagem de Definição de Dados), DML (Linguagem de Manipulação de Dados), DQL (Linguagem de Consulta de Dados), DCL (Linguagem de Controle de Dados) e DTL (Linguagem de Transação de Dados).</p>
-                <p>Por fim, discutimos a normalização do banco de dados, que é o processo de organização padrão para melhor visualização e compreensão dos dados. Durante esse processo, realizamos a atomicidade dos dados, a criação de chaves primárias e a remoção de atributos repetidos. Além disso, garantimos que não houvesse dependência parcial ou dependências transitivas, ou seja, uma relação não deve ter um atributo não-chave determinado funcionalmente por outro atributo não-chave.</p><br>
+                <p>&emsp;&emsp;Em um <b>banco de dados</b>, é essencial entender o conceito e a importância dele. Um banco de dados é uma <b>coleção organizada de informações</b>, ou dados, geralmente armazenados eletronicamente em um sistema de computador. </p>
+                <p>&emsp;&emsp;Normalmente, o banco de dados é controlado por um <b>sistema de gerenciamento de banco de dados</b> (DBMS) e ele possui dois tipos: O banco de dados <b>Relaciona</b> e o <b>Não-Relacional</b>. No contexto de banco de dados, há dois conceitos importantes: o <b>Modelo Entidade e Relacionamento</b> (MER) e o <b>Diagrama de Entidade e Relacionamento</b> (DER).</p>
+                <p>&emsp;&emsp;O MER é utilizado para criar um <b>modelo conceitual</b> que representa a <b>estrutura lógica</b> dos dados em um sistema. Ele é composto por entidades e relacionamentos, e pode ser representado textualmente ou visualmente por meio de um diagrama de classe.</p> 
+                <p>&emsp;&emsp;Já o DER é uma <b>representação visual</b> do modelo entidade e relacionamento, que inclui atributos, relacionamentos e cardinalidades de cada elemento. Normalmente, o DER serve como <b>base para projetar e implementar</b> o modelo físico do banco de dados. O <b>modelo físico</b> é a implementação concreta do banco de dados em um Sistema de Gerenciamento de Banco de Dados (SGBD), como o <B>PostgreSQL</B>, por exemplo.</p>
+                <p>&emsp;&emsp;Após compreendermos esses conceitos, passamos a aprender sobre a <b>linguagem</b> utilizada em um banco de dados. Isso inclui os comandos de <B>DDL</B> (Linguagem de Definição de Dados), <B>DML</B> (Linguagem de Manipulação de Dados), <B>DQL</B> (Linguagem de Consulta de Dados), <B>DCL</B> (Linguagem de Controle de Dados) e <B>DTL</B> (Linguagem de Transação de Dados).</p>
+                <p>&emsp;&emsp;Para obtermos uma compreensão prática da criação de todo esse processo, <b>desenvolvemos</b> um projeto que envolveu a criação do <b>modelo lógico</b>, <b>conceitual</b> e <b>físico</b> de um banco de dados específico para uma <d>universidade</d>. Nesse projeto, incorporamos todas as entidades e atributos necessários para simular de forma abrangente os elementos essenciais de um <b>banco de dados universitário</b>. Além disso, estabelecemos relacionamentos entre essas entidades, permitindo a troca de informações importantes entre elas.</p>
+                <p>&emsp;&emsp;Por fim, discutimos a <B>normalização</B> do banco de dados, que é o processo de <b>organização padrão</b> para melhor visualização e compreensão dos dados. Durante esse processo, realizamos a atomicidade dos dados, a criação de <b>chaves primárias</b> e a remoção de <b>atributos</b> repetidos. Além disso, garantimos que não houvesse <b>dependência parcial</b> ou <b>dependências transitivas</b>, ou seja, uma relação não deve ter um atributo não-chave determinado funcionalmente por outro atributo não-chave, onde todos estes processos fazem parte da <b>Primeira</b>, <b>Segunda</b> e <b>Terceira forma normal</b>.</p><br>
             </div>
         </div>
     </section>
